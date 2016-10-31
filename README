@@ -1,0 +1,17 @@
+# Monitoring - A server monitoring service for NodeJS
+
+## Usage
+Install this service on your server and specify config files
+
+## TODO LIST
+- [ ] cpu,memory,disk and bandwidth usage monitoring.
+      If the value exceed the specified threshold value,it will send email or sms to developer.
+- [ ] modify config files
+- [ ] log file analyze.(mix apache flume latter)
+- [ ] website api latency and average latency statistics
+- [ ] trigger some default actions when our service is running error (restart pm2,restart our app eg..)
+- [ ] notify developer when incidents happen(email,XMPP,ZeroMQ)
+- [ ] any proxy(this system also provide some assist functions)
+- [ ] web interactive shell
+- [ ] version switch(We can rollback to any one stable version,which can run over 7 days without any errors.)
+- [ ] advanced graceful restart(The old one will be replaced,only if a new service start successfully.)
